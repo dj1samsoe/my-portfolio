@@ -18,6 +18,7 @@ body {
   color: #fff;
   background: var(--bg);
   font-family: "Poppins", sans-serif;
+  /* min-height: 2000px; */
 }
 
 .navbar {
@@ -123,6 +124,11 @@ body {
   );
 }
 
+/* .home .text-box {
+  transform: translateX(-50%);
+  z-index: 1;
+} */
+
 .home .text-box img {
   border: 2px solid var(--purple);
   border-radius: 50%;
@@ -206,6 +212,8 @@ body {
 .about .row .content1 {
   padding: 0 1rem;
   flex: 1 1 35rem;
+  /* transform: translateX(50%); */
+  z-index: 1;
 }
 
 .about .row .content1 p {

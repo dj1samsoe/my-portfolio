@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio | Achmad Fauzian Dhany Hidayat</title>
+    <title>Achmad Fauzian Dhany Hidayat</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,11 +13,15 @@
       rel="stylesheet"
     />
 
+    <!-- Scroll Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="js/script.js" />
+    
   </head>
   <body>
       <nav class="navbar"> 
@@ -26,8 +30,8 @@
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#my-skills">Skills</a></li>
-            <li><a href="#my-project">My Project</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">My Project</a></li>
           </ul>
         </div>
         <div class="navbar-extra">
@@ -40,7 +44,7 @@
       <!-- Home Section -->
       <section class="home" id="home">
         <div class="text-box">
-          <img src="img/profil2.jpg" alt="profil">
+          <img src="img/profil2.jpg" alt="profil" data-aos="flip-up" data-aos-duration="1000">
           <h1>Hi! I'm <span>Dhany</span></h1>
           <h2><span>Front End</span> Developer</h2>
           <a href="#about" class="homeBtn">About Me</a>
@@ -49,23 +53,23 @@
 
       <!-- About Me Section -->
       <section class="about" id="about">
-        <h2><span>About</span> Me</h2>
+        <h2 data-aos="fade-up" data-aos-duration="3000"><span>About</span> Me</h2>
 
         <div class="row">
-          <div class="content1">
+          <div class="content1" data-aos="fade-up" data-aos-duration="3000">
             <p>Welcome to my portfolio website! I'm <strong>Achmad Fauzian Dhany Hidayat</strong>, a passionate and skilled Front End Developer, and I'm thrilled to have you here. With a strong foundation in web development and a love for creating visually appealing and user-friendly interfaces, I am dedicated to crafting immersive digital experiences. Over the years, I have honed my expertise in <strong>HTML, CSS, and JavaScript</strong>, and I stay updated with the latest technologies and frameworks to deliver cutting-edge solutions. My journey as a Front End Developer has been one of constant learning and growth. I take pride in my ability to transform design concepts into fully functional websites that not only look stunning but also provide seamless navigation and intuitive user interactions.</p>
           </div>
           <div class="content2">
-            <div class="front-end">
+            <div class="front-end" data-aos="fade-up" data-aos-duration="3000">
               <h4>HTML</h4>
               <h4>CSS</h4>
               <h4>JavaScript</h4>
             </div>
-            <div class="back-end">
+            <div class="back-end" data-aos="fade-up" data-aos-duration="3000">
               <h4>PHP</h4>
               <h4>MySQL</h4>
             </div>
-            <div class="framework">
+            <div class="framework" data-aos="fade-up" data-aos-duration="3000">
               <h4>Laravel</h4>
               <h4>React.Js</h4>
               <h4>Node.Js</h4>
@@ -75,8 +79,15 @@
         </div>
       </section>
 
+      <section class="skills" id="skills">
+
+      </section>
+
     <script>
       feather.replace()
+    </script>
+    <script>
+      AOS.init();
     </script>
     <script src="js/script.js"></script>
   </body>
